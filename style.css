@@ -1,0 +1,40 @@
+.page {
+  width: 1600px;
+  margin: 0 auto;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(105, 121, 9, 0.23012955182072825) 53%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border: 1px solid red;
+  /* font-family: 'Courier New', Courier, monospace; */
+}
+
+main img {
+  max-width: 100%;
+}
+
+
+.title {
+    text-align: center;
+}
+
+.card {
+    border: 1px solid black;
+    width: 400px;
+    display: inline-block;
+    margin: 16px;
+    height: 400px;
+    vertical-align: top;
+}
+
+.card__title {
+    text-align: center;
+}
+
+.card-container {
+    border: 1px solid green;
+    /* display: flex; */
+}

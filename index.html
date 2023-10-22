@@ -1,57 +1,104 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Продаем все вместе</title>
-        <!-- <link href="./favicon.png" type="image/png" rel="icon/x-icon"> -->
-        <!-- <link rel="icon" type="image/x-icon" href="./favicon.png"> -->
-        <link rel="icon" href="./favicon.png" type="image/png">
-    </head>
-    <body>
-        <header>
-            <h1>Продаем бананы одежду кроссовки огурцы арбузы игрушки и...</h1>
-        </header>
-        <main>
-            <section id="description">
-                <h2>Про наши огррцы и арбузы и ...</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum enim est eligendi delectus laborum libero saepe accusantium aperiam. Rerum non ratione, eligendi officia laudantium neque veniam soluta similique aut?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum enim est eligendi delectus laborum libero saepe accusantium aperiam. Rerum non ratione, eligendi officia laudantium neque veniam soluta similique aut?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum enim est eligendi delectus laborum libero saepe accusantium aperiam. Rerum non ratione, eligendi officia laudantium neque veniam soluta similique aut?</p>
-            </section>
+  <head>
+    <title>Продаем все вместе</title>
+    <link rel="icon" href="./favicon.png" type="image/png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="page_id" class="page">
+      <header class="header">
+        <h1 class="title">
+          Продаем бананы одежду кроссовки огурцы арбузы игрушки и...
+        </h1>
+      </header>
+      <main>
+        <section class="desc" id="description">
+          <h2>Про наши огррцы и арбузы и ...</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum
+            enim est eligendi delectus laborum libero saepe accusantium aperiam.
+            Rerum non ratione, eligendi officia laudantium neque veniam soluta
+            similique aut?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum
+            enim est eligendi delectus laborum libero saepe accusantium aperiam.
+            Rerum non ratione, eligendi officia laudantium neque veniam soluta
+            similique aut?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum
+            enim est eligendi delectus laborum libero saepe accusantium aperiam.
+            Rerum non ratione, eligendi officia laudantium neque veniam soluta
+            similique aut?
+          </p>
+        </section>
 
-            <section id="image">
-                <h2>Как это выглядит</h2>
-                <img src="https://webpulse.imgsmail.ru/imgpreview?key=pulse_cabinet-image-4084d690-ac3e-46b4-abcb-77ec9182c126&mb=webpulse">
-                <!-- <img src="https://www.gastronom.ru/binfiles/images/20230425/bd489af8.jpg"/> -->
-                <img src="./banana.png"/>
-            </section>
+        <section class="desc" id="image">
+          <h2>Как это выглядит</h2>
 
-            <section id="video">
-                <h2>Что говорят о нас</h2>
-                <iframe
-                    width="1280"
-                    height="720"
-                    src="https://www.youtube.com/embed/KAoUVu0jHHY"
-                    title="КАК СОЧЕТАТЬ КРОССОВКИ И ШТАНЫ / ТОП ШТАНОВ ДЛЯ ПАРНЕЙ / КАК ПОДОБРАТЬ БРЮКИ ДЖИНСЫ ПОД КРОССОВКИ )"
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                </iframe>
-            </section>
+          <div class="card-container">
 
-            <section>
-                
-            </section>
-            <footer>
-                <h2>Наши контактты</h2>
-                <ul>
-                    <li>
-                        <a href="https://ya.ru/" target="_blank">Яндекс в новой вкладке</a>
-                    </li>
-                    <li>
-                        <a href="https://ya.com/" >Яндекс в этой вкладке</a>
-                    </li>
-                </ul>
-            </footer>
-        </main>
-    </body>
+            <div class="card">
+              <h3 class="card__title">Это огурец</h3>
+              <img
+                class="card__img"
+                src="https://webpulse.imgsmail.ru/imgpreview?key=pulse_cabinet-image-4084d690-ac3e-46b4-abcb-77ec9182c126&mb=webpulse"
+                alt="тут огурцы" />
+              <p class="card__desc">Наш огурец вкусный и дешевый</p>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">Это банан</h3>
+              <img class="card__img" src="./banana.png" alt="тут бананы" />
+              <p class="card__desc">Банан подороже, но и повкуснее</p>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">Это кроссы</h3>
+              <img
+                class="card__img"
+                src="./shoes.webp"
+                alt="тут красный кросовок" />
+              <p class="card__desc">Кроссы тоже норм</p>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">Это игрушки</h3>
+              <img class="card__img" src="./toys.webp" alt="тут игрушки" />
+              <p class="card__desc">Игрушки огонь</p>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- 
+        <section id="video">
+          <h2>Что говорят о нас</h2>
+          <iframe
+            width="1280"
+            height="720"
+            src="https://www.youtube.com/embed/2KtxSgS2u2g"
+            title="НАСТАВНИК ПО БИЗНЕСУ #1 Использовал звёзд Фабрики в личных целях"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </section> -->
+
+      </main>
+      <footer>
+        <h2>Наши контактты</h2>
+        <ul>
+          <li>
+            <a href="https://ya.ru/" target="_blank">Телеграмм</a>
+          </li>
+          <li>
+            <a href="https://ya.com/">Почта</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
-
-
