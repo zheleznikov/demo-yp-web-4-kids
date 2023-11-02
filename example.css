@@ -1,0 +1,60 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: aquamarine;
+}
+
+.header__container, .content__container, .footer__container {
+    margin: 0 auto;
+    max-width: 956px;
+}
+
+
+.content {
+  background-color: beige;
+  flex-grow: 1;
+  /* flex: 1 0 auto; */
+
+  /* flex-shrink: 0;
+  flex-basis: auto; */
+  /* flex-grow: 1; https://doka.guide/css/flex-grow/
+  flex-shrink: 0; https://doka.guide/css/flex-shrink/ Если в контейнере не хватает места для расположения всех элементов без изменения размеров, то свойство flex-shrink указывает, в каких пропорциях элемент будет уменьшаться.
+  flex-basis: auto;  https://doka.guide/css/flex-basis/ */
+}
+
+
+
+.footer {
+  background-color: blueviolet;
+}
+
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: cornflowerblue;
+  border: 1px solid black;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 24px;
+    column-gap: 24px;
+    padding-bottom: 32px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+
