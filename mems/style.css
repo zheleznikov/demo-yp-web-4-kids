@@ -1,0 +1,100 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: rgba(255, 61, 254, 1);
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: 400;
+  font-size: 77px;
+  height: 110xp;
+}
+
+.header__container,
+.content__container,
+.footer__container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.content__container {
+  display: flex;
+  padding: 32px 150px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.content {
+  background: linear-gradient(
+    155.88deg,
+    #ffed00 0%,
+    #ff3dfe 51.89%,
+    #5253ff 100%
+  );
+  flex-grow: 1;
+  /* flex: 1 0 auto; */
+
+  /* flex-shrink: 0;
+  flex-basis: auto; */
+  /* flex-grow: 1; https://doka.guide/css/flex-grow/
+  flex-shrink: 0; https://doka.guide/css/flex-shrink/ Если в контейнере не хватает места для расположения всех элементов без изменения размеров, то свойство flex-shrink указывает, в каких пропорциях элемент будет уменьшаться.
+  flex-basis: auto;  https://doka.guide/css/flex-basis/ */
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.footer__container {
+  text-align: center;
+}
+
+.footer__logo {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.card {
+  width: 346px;
+  height: 346px;
+  background-color: cornflowerblue;
+  border: 1px solid black;
+}
+
+.card__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  
+  color: inherit; 
+  text-decoration: inherit; /* no underline */
+  text-decoration: none;
+
+}
+
+.card__image {
+  max-width: 100%;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 24px;
+  column-gap: 24px;
+  padding-bottom: 32px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
