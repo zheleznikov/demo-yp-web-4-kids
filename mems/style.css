@@ -62,8 +62,9 @@ body {
 .card {
   width: 346px;
   height: 346px;
+
   background-color: cornflowerblue;
-  border: 1px solid black;
+
 }
 
 .card__container {
@@ -80,6 +81,7 @@ body {
 
 .card__image {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .cards {
