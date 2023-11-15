@@ -8,7 +8,6 @@
     rgba(105, 121, 9, 0.23012955182072825) 53%,
     rgba(255, 255, 255, 1) 100%
   );
-  border: 1px solid red;
   /* font-family: 'Courier New', Courier, monospace; */
 }
 
@@ -28,6 +27,11 @@ main img {
     margin: 16px;
     height: 400px;
     vertical-align: top;
+    
+}
+
+.card_2 {
+  cursor: pointer;
 }
 
 .card__title {
@@ -35,6 +39,6 @@ main img {
 }
 
 .card-container {
-    border: 1px solid green;
-    /* display: flex; */
+    display: flex;
 }
+

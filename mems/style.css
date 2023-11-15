@@ -64,7 +64,8 @@ body {
   height: 346px;
 
   background-color: cornflowerblue;
-
+  border: 1px solid black;
+  /* border: 1px solid gray; */
 }
 
 .card__container {
