@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Press+Start+2P&display=swap');
+
 .page {
   width: 1600px;
   margin: 0 auto;
@@ -8,7 +10,7 @@
     rgba(105, 121, 9, 0.23012955182072825) 53%,
     rgba(255, 255, 255, 1) 100%
   );
-  /* font-family: 'Courier New', Courier, monospace; */
+ 
 }
 
 main img {

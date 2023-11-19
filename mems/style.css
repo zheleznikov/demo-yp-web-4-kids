@@ -14,8 +14,8 @@ body {
 }
 
 .header__container,
-.content__container,
-.footer__container {
+.content__container
+{
   margin: 0 auto;
   max-width: 1440px;
 }
@@ -51,7 +51,12 @@ body {
 }
 
 .footer__container {
-  text-align: center;
+  /* border: 1px solid white; */
+  max-width: 1440px;
+  margin: 0 auto;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__logo {

@@ -21,15 +21,19 @@
         </header>
         <section class="content">
           <div class="descprition">
-            <img class="descprition__image" src="./images/mem1.png"/>
+            <!-- <img class="descprition__image" src="./images/mem1.png"/> -->
+            <picture>
+              <source srcset="./images/mem1-300.webp" media="(max-width:320px)" type="image/webp">
+              <source srcset="./images/mem1-620.webp" media="(max-width:640px)" type="image/webp">
+              <img srcset="./images/mem1.webp" alt="" class="descprition__image">
+            </picture>
             <h2 class="descprition__title">Когда учитель объясняет флексбокс</h2>
             <h3 class="descprition__subtitle">Основано на меме «Козел и кот»</h3>
             <div class="description__content">
 
               <div class="descprition__statistic">
                 <div class="descprition__statistic-element">
-                  <p>
-                    Год создания 
+                  <p>Год создания 
                   </p>
                   <p>
                     2023
