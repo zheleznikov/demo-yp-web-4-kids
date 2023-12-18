@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <meta charset="UTF-8" />
+
+    <link rel="styleshee" href="src/styles.css" />
+
+
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: rosybrown;
+      }
+
+      h3 {
+        margin-top: 0;
+      }
+
+      .main {
+        padding: 1rem;
+      }
+
+      .main__section {
+        padding: 2rem;
+        border: 1px solid black;
+        margin-bottom: 1rem;
+        background-color: white;
+      }
+
+      .my-button {
+        min-width: 100px;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <main class="main">
+
+      <section class="main__section">
+        <h2>Событие "click"</h2>
+        <div>Происходит, когда кликнули на элемент</div>
+        <button class="my-button">Button</button>
+      </section>
+
+      <section class="main__section">
+        <h2>Событие "keydown"</h2>
+        <div>Происходит, когда посетитель нажимает клавишу</div>
+        <p id="last-key">Нажмите любую клавишу</p>
+      </section>
+
+      <section class="main__section" id="hover-me">
+        <h2>Событие "mouseover"</h2>
+        <p>Происходит, когда на элемент наводится мышь</p>
+        <p>Наведи на блок</p>
+      </section>
+
+      <section class="main__section">
+        <h2>Событие "copy"</h2>
+        <p>Происходит, когда посетитель что-то скопировал</p>
+        <p id="copy">Скопируй что-нибудь на странице</p>
+      </section>
+
+    </main>
+  </body>
+  <script src="./index.js"></script>
+
+</html>
