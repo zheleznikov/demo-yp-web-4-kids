@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+#wordsContainer {
+  display: flex;
+  gap: 32px;
+
+  font-family: sans-serif;
+  flex-wrap: wrap;
+
+  /* border: 2px solid #393e46; */
+  background-color: white;
+  border-radius: 8px;
+  min-height: 500px;
+}
+
+#wordsContainer > div {
+  padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px 0px rgba(34, 40, 49, 0.2);
+
+  background-color: #eeeeee;
+  color: #393e46;
+  max-height: 70px;
+}
+
+#wordsContainer p {
+  color: #393e46;
+}
+
+.addWordForm {
+  margin-top: 16px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 8px;
+  width: 100%;
+}
+
+input,
+button {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+}
+
+input,
+button:focus {
+  outline: none;
+}
+
+input {
+  box-shadow: 0px 2px 4px 0px rgba(34, 40, 49, 0.2);
+}
+
+button {
+  cursor: pointer;
+
+  color: #00adb5;
+  background-color: #393e46;
+  transition: all 0.5s linear;
+  margin-bottom: 16px;
+}
+
+button:hover {
+  transform: scale(0.95);
+}
+
+.visible {
+    display: block;
+}
