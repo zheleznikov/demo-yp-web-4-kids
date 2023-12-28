@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 html {
-    background: center/cover no-repeat url("https://r4.wallpaperflare.com/wallpaper/30/586/460/artwork-fantasy-art-digital-art-forest-wallpaper-3cdadbae5dd4b0ca4dd008fd72d13bf3.jpg");
+    background: center/cover no-repeat url("https://images.unsplash.com/photo-1521846562476-9c2446539e47?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     height: 100%;
 }
 
@@ -21,10 +21,10 @@ p {
     /* min-height: 100%; */
     max-width: 1440px;
     margin:0 auto;
-    background: rgba(255, 0, 222, 0.1);
+    /* background: rgba(255, 0, 222, 0.1); */
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 1px 3px 7px rgba(255, 0, 222, 0.2);
+    /* box-shadow: 1px 3px 7px rgba(255, 0, 222, 0.2); */
 }
 
 .form__input {
@@ -34,8 +34,9 @@ p {
 }
 
 .input__container {
-    display: block;
+    display: flex;
     align-items: center;
+    flex-direction: column;
     width: 540px;
     gap: 24px;
 }
@@ -48,10 +49,11 @@ p {
 .input {
     outline: none;
     border: black inset 1px;
-    padding: 2px 12px 2px 12px;
-    margin-top: 24px;
+    padding: 2px 6px 2px 6px;
+    margin-top: 12px;
     border-radius: 6px;
     background: rgba(40, 15, 30, 0.9);
+    background: black;
     color: #eeeeee;
     font-size: 14px;
     font-weight: bold;
@@ -104,11 +106,11 @@ p {
 .heroes__card {
     box-sizing: border-box;
     flex: 0 0 auto;
-    background: rgba(100, 0, 100, 0.9);
+    background: white;
     color: #eeeeee;
     width: 220px;
     height: 300px;
-    box-shadow: 3px 1px 3px rgba(255, 5, 0, 0.04);
+    /* box-shadow: 3px 1px 3px rgba(255, 5, 0, 0.04); */
     border-radius: 14px;
     padding: 12px;
     gap: 24px;
@@ -123,7 +125,7 @@ p {
 }
 
 .card__info {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -147,15 +149,18 @@ p {
     align-items: center;
     cursor: pointer;
     color: #eeeeee;
-    background: rgba(255, 5, 0, 0.64);
+    background: rgb(255, 5, 0);
     border-radius: 4px;
     border: none;
     font-weight: bold;
     user-select: none;
+    width: 260px
 }
 
 .delete__button {
     position: absolute;
+    top: -4px;
+    right: 0px;
     margin: 6px auto auto auto;
     background: none;
     border: none;
@@ -177,7 +182,7 @@ svg {
     display: flex;
     padding: 12px;
     background: rgba(12, 12, 12, 0.8);
-    box-shadow: 6px 3px 6px rgba(1, 1, 1, 0.3);
+    /* box-shadow: 6px 3px 6px rgba(1, 1, 1, 0.3); */
     border-radius: 12px;
     justify-content: center;
 }
