@@ -1,8 +1,9 @@
-const SERVER_URL = 'http://127.0.0.1:8080';
+const SERVER_URL = 'https://heroes-server.onrender.com';
 
 const heroName = document.getElementById('heroName');
 const heroClass = document.getElementById('heroClass');
 const heroImage = document.getElementById('heroImage');
+
 const addHeroButton = document.getElementById('addButton');
 
 const heroesContainer = document.getElementById('heroesContainer');
@@ -12,16 +13,19 @@ getHeroesFromServer(displayHeroes);
 addHeroButton.addEventListener('click', () => {
   validateData(heroName.value, heroClass.value);
 
-  addHeroToServer({
+  const heroObject = {
     name: heroName.value,
     clazz: heroClass.value,
-    image: heroImage.value,
-  }, displayHeroes);
+    image: heroImage.value
+  }
+
+  addHeroToServer(heroObject, displayHeroes);
 
   clearInput(heroClass);
   clearInput(heroName);
   clearInput(heroImage);
 });
+
 
 function displayHeroes(heroes, heroesContainer) {
   heroesContainer.innerHTML = '';
@@ -73,22 +77,30 @@ function getHeroesFromServer(handleData) {
   const url = `${SERVER_URL}/hero`;
 
   fetch(url)
-    .then((rs) => rs.json())
-    .then((data) => handleData(data, heroesContainer))
-    .catch((err) => console.log(err));
+    .then((rs) => {
+      if (rs.ok) {
+        return rs.json();
+      }
+    })
+    .then(body => {
+      handleData(body, heroesContainer)
+    })
+    
+    .catch((err) => alert(err));
 }
-
 
 
 function addHeroToServer(body, handleData) {
   const url = `${SERVER_URL}/hero`;
+  
   const params = {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json;',
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify(body),
   };
+
 
   fetch(url, params)
     .then((rs) => rs.json())
@@ -99,11 +111,9 @@ function addHeroToServer(body, handleData) {
 function deleteHeroFromServer(id, handleData) {
   const url = `${SERVER_URL}/hero/${id}`;
   const params = {
-    method: 'DELETE',
-    headers: {
-      'Content-Type': 'application/json;',
-    },
+    method: 'DELETE'
   };
+
   fetch(url, params)
     .then((rs) => rs.json())
     .then((data) => handleData(data, heroesContainer))
