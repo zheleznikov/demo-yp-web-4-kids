@@ -1,9 +1,12 @@
 export class Popup {
 
+//  popupBg = document.querySelector(""); можно найти bg прямо в 
+
   constructor(popup, popupBg) {
     this.popup = popup;
     this.popupBg = popupBg;
 
+    this.initHandle();
   }
 
   open() {
@@ -27,8 +30,7 @@ export class Popup {
   initHandle() {
     window.addEventListener('keydown', this.closeByKey.bind(this));
     document.addEventListener('click', this.closeByClick.bind(this));
-    this.popup
-      .querySelector('.close-popup')
+    this.popup.querySelector('.close-popup')
       .addEventListener('click', this.close.bind(this));
   }
 
