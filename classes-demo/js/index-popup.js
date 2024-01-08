@@ -1,4 +1,4 @@
-import { Popup } from "./Popup.js";
+import { Popup } from "./popup.js";
 
 // page els
 const popupBg = document.querySelector('.popup__bg');
