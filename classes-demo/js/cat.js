@@ -1,7 +1,7 @@
 export class Cat {
 
   /** 
-   * поля класса: hнапример, имя и возраст
+   * поля класса: например, имя и возраст
   */
   constructor(catName, catAge) {
       this.catName = catName;

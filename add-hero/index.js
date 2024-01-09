@@ -11,14 +11,12 @@ const wordsContainer = document.getElementById('wordsContainer');
 function createCard(englishWord, russianWord) {
     const card = document.createElement('div');
     const cardBody = `<h3>${englishWord}</h3><p>${russianWord}</p>`;
-    // const cardBody2 = "<h3>" + englishWord + "</h3><p>" +  russianWord + "</p>";
 
     card.innerHTML = cardBody;
     card.onclick = () => card.remove();
 
     return card;
 }
-
 
 
 /*
@@ -31,7 +29,6 @@ function addCard() {
     const card = createCard(englishWord, russianWord);
 
     wordsContainer.appendChild(card);
-
 }
 
 
@@ -39,8 +36,6 @@ function addCard() {
     Функция обрабатывает нажатие на кнопку добавить карточку
 */
 function handleAddCardButtonClick() {
-    console.log("handle button click");
-
     if (validateInput()) {
         addCard();
         clearForm();
