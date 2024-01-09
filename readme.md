@@ -11,3 +11,4 @@
 4. <b>[add-hero](./add-hero)</b> - пример создания страницы с помощью JS
 5. <b>[server-demo](./server-demo)</b> - пример отправки и обработки запроса с API сервера
 6. <b>[classes-demo](./classes-demo)</b> - пример классов в JS
+7. <b>[inherit-demo](./inherit-demo)</b> - пример наследования в JS
