@@ -1,4 +1,5 @@
 import { Cat } from './base/cat.js';
+import { Popup } from "./advanced/popup.js";
 
 
 const catCharlie = new Cat("Charlie", 5);
@@ -6,7 +7,6 @@ const catMoon = new Cat("Moon", 3);
 
 catCharlie.guesWhoAmI();
 
-import { Popup } from "./popup.js";
 
 // Объявляем элементы страницы
 const popup = document.querySelector('.popup');
