@@ -1,11 +1,12 @@
 import { Cat } from './base/cat.js';
 import { Popup } from "./advanced/popup.js";
+import { FormPopup } from "./advanced/formPopup.js";
 
 
-const catCharlie = new Cat("Charlie", 5);
-const catMoon = new Cat("Moon", 3);
+const catCharlie = new Cat("Charlie", 5, 4, "meow", true);
+// const catMoon = new Cat("Moon", 3);
 
-catCharlie.guesWhoAmI();
+catCharlie.displayInfoAboutMe();
 
 
 // Объявляем элементы страницы
@@ -15,6 +16,5 @@ const openEmptyPopupButton = document.querySelector('.open-popup');
 const popupForm = document.querySelector('.popup_form');
 const openFormPopupButton = document.querySelector('.open-popup_form');
 
-
 const emptyPopup = new Popup(popup, openEmptyPopupButton);
-const popupWithForm = new Popup(popupForm, openFormPopupButton);
+const popupWithForm = new FormPopup(popupForm, openFormPopupButton);
