@@ -20,7 +20,6 @@ export class Cat extends Animal {
     console.log("Please don't forget that I'm a cat");
     // c помощью ключевого слова super вызываем функцию родительского класса. 
     super.howISound();
-    
   }
 
 

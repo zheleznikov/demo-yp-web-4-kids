@@ -12,8 +12,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
+
     height: 100vh;
 }
 
@@ -21,17 +22,18 @@ body {
     display: inline-block;
     padding: 15px 30px;
     text-transform: uppercase;
-    background: #2982ff;
+    background: purple; 
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     border-radius: 5px;
     width: 350px;
     text-align: center;
+    margin-bottom: 32px;
 }
 
 .open-popup_form {
-    background: purple;
+    background: #2982ff;
 }
 
 .popup__bg {
@@ -140,6 +142,7 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.5s all;
+   
 }
 
 .popup button:hover {

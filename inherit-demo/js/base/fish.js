@@ -10,7 +10,6 @@ export class Fish extends Animal {
     howISound() {
         console.log("I'm a fish. Nobody knows how I sound;")
     }
-
     
 
 }
