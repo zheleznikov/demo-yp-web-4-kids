@@ -1,9 +1,16 @@
-export {Animal} from "./animal"
+import { Animal } from "./animal.js";
 
-class Fish extends Animal {
+export class Fish extends Animal {
 
-    constructor() {
-        super();
+    constructor(fishName, fishAge) {
+        super(fishName, fishName, 0, undefined, false);
     }
+
+    // пример полного переопределения метода родительского класса
+    howISound() {
+        console.log("I'm a fish. Nobody knows how I sound;")
+    }
+
+    
 
 }

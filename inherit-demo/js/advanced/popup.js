@@ -1,7 +1,8 @@
 export class Popup {
 
   popupBg = document.querySelector('.popup__bg');
-  activeClassName = 'active';
+  
+  #activeClassName = 'active';
 
   constructor(popup, button) {
     this.popup = popup;
@@ -11,11 +12,11 @@ export class Popup {
   }
 
   open() {
-    [this.popup, this.popupBg].forEach(el => this._add(el));
+    [this.popup, this.popupBg].forEach(el => this.#add(el));
   }
 
   close() {
-    [this.popup, this.popupBg].forEach(el => this._remove(el))
+    [this.popup, this.popupBg].forEach(el => this.#remove(el))
   }
 
   closeByKey(event) {
@@ -27,6 +28,7 @@ export class Popup {
   }
 
   initHandle() {
+    
     this.button.addEventListener('click', this.open.bind(this));
     window.addEventListener('keydown', this.closeByKey.bind(this));
     document.addEventListener('click', this.closeByClick.bind(this));
@@ -34,12 +36,12 @@ export class Popup {
       .addEventListener('click', this.close.bind(this));
   }
 
-  _add(el) {
-    el.classList.add(this.activeClassName);
+  #add(el) {
+    el.classList.add(this.#activeClassName);
   }
 
-  _remove(el) {
-    el.classList.remove(this.activeClassName);
+  #remove(el) {
+    el.classList.remove(this.#activeClassName);
   }
 
 
