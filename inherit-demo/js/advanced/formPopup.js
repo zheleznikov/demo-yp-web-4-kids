@@ -9,6 +9,7 @@ export class FormPopup extends Popup {
 
     constructor(popup, button) {
         super(popup, button);
+       
 
         this.initFormHandle();
     }
@@ -19,12 +20,10 @@ export class FormPopup extends Popup {
         console.log(this.nameInput.value);
         console.log(this.phoneInput.value);
         console.log(this.messageTextarea.value);
-
     }
 
     initFormHandle() {
         this.form.addEventListener('submit', (event) => {
-            console.log(event);
             this.handleForm(event);
         })
 
