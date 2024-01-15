@@ -12,3 +12,4 @@
 5. <b>[server-demo](./server-demo)</b> - пример отправки и обработки запроса с API сервера
 6. <b>[classes-demo](./classes-demo)</b> - пример классов в JS
 7. <b>[inherit-demo](./inherit-demo)</b> - пример наследования в JS
+8. <b>[func-arr-demo](./func-arr-demo)</b> - Функциональное программирование и методы для работы с массивами
