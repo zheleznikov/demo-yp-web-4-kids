@@ -51,14 +51,14 @@ for (let i = 0; i < mutabled.length; i++) {
 
 
 // Не изменяем исходные данные
-const immutabe = [1, 2, 3];
-const updatedArr = [];
+const immutable = [1, 2, 3];
 
-for (let i = 0; i < immutabe.length; i++) {
-  updatedArr[i] = immutabe[i] * 2;
+const updatedArr = [];
+for (let i = 0; i < immutable.length; i++) {
+  updatedArr[i] = immutable[i] * 2;
 }
 
-// console.log(immutabe);
+// console.log(immutable);
 // console.log(updatedArr);
 
 
@@ -74,6 +74,8 @@ function foo(value, bar) { // функция принимает значение
 function baz(a) {
     console.log(a);
 }
+
+// foo("What does the fox say", baz);
 
 // foo("what does the fox say", baz);
 
